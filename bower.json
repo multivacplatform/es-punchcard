@@ -1,0 +1,13 @@
+{
+  "name": "es-punchcard",
+  "version": "1.0.0",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "d3": "latest",
+    "bootstrap": "latest"
+  },
+  "private": true
+}
