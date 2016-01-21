@@ -13,7 +13,8 @@
   ],
   "dependencies": {
     "d3": "latest",
-    "bootstrap": "latest"
+    "bootstrap": "latest",
+    "moment": "~2.10.6"
   },
   "private": false,
   "main": "es-punchcard.js",
