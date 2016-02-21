@@ -17,7 +17,24 @@ or
 git clone https://maziyar_sh@bitbucket.org/iscpif/es-punchcard.git
 ```
 
+You need these JS libraries if you installing this manually:
+
+
+D3 [https://github.com/mbostock/d3] (https://github.com/mbostock/d3)
+
+Moment [https://github.com/moment/moment] (https://github.com/moment/moment)
+
+jQuery [https://github.com/jquery/jquery] (https://github.com/jquery/jquery)
+
+Optional for the demo file:
+
+Bootstrap [https://github.com/twbs/bootstrap] (https://github.com/twbs/bootstrap)
+
+
 ###Bower
+
+This would install everything you need:
+
 ```
 bower install --save es-punchcard
 ```
