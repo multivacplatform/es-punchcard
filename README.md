@@ -4,29 +4,6 @@
 ##Description
 Make punchcard charts based on Elasticsearch [histogram] (https://www.elastic.co/guide/en/elasticsearch/reference/master/search-aggregations-bucket-histogram-aggregation.html) or [date histogram] (https://www.elastic.co/guide/en/elasticsearch/reference/master/search-aggregations-bucket-datehistogram-aggregation.html) aggregations
 
-##Documentation
-
-Set some settings before calling the init() function:
-
-```javascript
-punchcard.width = 500;
-punchcard.top = 50;
-punchcard.svgID = "myFristChart";
-```
-
-You can set these settings anytime and call the init() again to initiate the SVG with new config.
-
-```javascript
-punchcard.init();
-```
-
-All charts would be removed whenever init() is called. (possible to only remove svg with a specific ID if you set one)
-
-Now it is time for loading data:
-
-```javascript
-punchcard.draw(data);
-```
 
 ##Installation
 ###Git clone
@@ -61,6 +38,40 @@ e.g. chage this to where ever you keep your D3 library.
  <script src="js/d3/d3.min.js"></script>
 ```
 
+
+##Documentation
+
+Set some settings before calling the init() function:
+
+```javascript
+punchcard.width = 500;
+punchcard.top = 50;
+punchcard.svgID = "myFristChart";
+```
+
+You can set these settings anytime and call the init() again to initiate the SVG with new config.
+
+```javascript
+punchcard.init();
+```
+
+All charts would be removed whenever init() is called. (possible to only remove svg with a specific ID if you set one)
+
+Now it is time for loading data:
+
+```javascript
+punchcard.draw(data);
+```
+
+##Data Structure
+
+This is a sample of one of the keys. The buckets refer to (date) histogram aggregation to fill the punchcard. 
+
+```javascript
+{"key":"carbon emissions","doc_count":320001,"score":52.34230602030492,"bg_count":519874,"monthly":{"buckets":[{"key_as_string":"2015-03-01T00:00:00.000Z","key":1425168000000,"doc_count":1916},{"key_as_string":"2015-04-01T00:00:00.000Z","key":1427846400000,"doc_count":28383},{"key_as_string":"2015-05-01T00:00:00.000Z","key":1430438400000,"doc_count":31190},{"key_as_string":"2015-06-01T00:00:00.000Z","key":1433116800000,"doc_count":32671},{"key_as_string":"2015-07-01T00:00:00.000Z","key":1435708800000,"doc_count":44745},{"key_as_string":"2015-08-01T00:00:00.000Z","key":1438387200000,"doc_count":31513},{"key_as_string":"2015-09-01T00:00:00.000Z","key":1441065600000,"doc_count":24680},{"key_as_string":"2015-10-01T00:00:00.000Z","key":1443657600000,"doc_count":18625},{"key_as_string":"2015-11-01T00:00:00.000Z","key":1446336000000,"doc_count":43595},{"key_as_string":"2015-12-01T00:00:00.000Z","key":1448928000000,"doc_count":62683}]}}
+```
+
+Right way to send aggregation to Elasticsearch to get proper response:
 
 
 ##Example
