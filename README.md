@@ -6,6 +6,8 @@ Make punchcard charts based on Elasticsearch [histogram] (https://www.elastic.co
 
 ##Documentation
 
+
+
 ##Installation
 ###Git clone
 ```
@@ -20,8 +22,26 @@ git clone https://maziyar_sh@bitbucket.org/iscpif/es-punchcard.git
 
 ###Bower
 ```
-bower install es-punchcard
+bower install --save es-punchcard
 ```
+
+(OPTIONAL) You may want to have a .bowerrc file and change it to:
+
+```
+{
+  "directory": "js/"
+}
+```
+
+This way you can use the demo.html right away. Otherwise you have to fix the paths to the required files.
+
+e.g. chage this to where ever you keep your D3 library.
+
+```
+ <script src="js/d3/d3.min.js"></script>
+```
+
+
 
 ##Example
 Climate at ISCPIF [https://climate.iscpif.fr/playground] (https://climate.iscpif.fr/playground)
