@@ -57,7 +57,7 @@ punchcard.init();
 
 All charts would be removed whenever init() is called. (possible to only remove svg with a specific ID if you set one)
 
-Now it is time for loading data:
+Now it is time for loading some data:
 
 ```javascript
 punchcard.draw(data);
