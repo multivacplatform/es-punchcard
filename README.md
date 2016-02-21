@@ -31,17 +31,17 @@ Repository [https://github.com/mutanthumb/ETD_bubbles] (https://github.com/mutan
 Example [http://neuralengr.com/asifr/journals] (http://neuralengr.com/asifr/journals/)
 
 ###Used Libraries
-Bootstrap
+Bootstrap [https://github.com/twbs/bootstrap] (https://github.com/twbs/bootstrap)
 
-D3
+D3 [https://github.com/mbostock/d3] (https://github.com/mbostock/d3)
 
-jQuery
+jQuery [https://github.com/jquery/jquery] (https://github.com/jquery/jquery)
 
-Moment.js
+Moment [https://github.com/moment/moment] (https://github.com/moment/moment)
 
 ##TODO
 * Updating documentations
-* Connect mouse events to custome functions
+* Connect mouse events to custome functions defined by user
 
 ##Copyright and License
 
