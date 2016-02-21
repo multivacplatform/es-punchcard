@@ -6,7 +6,27 @@ Make punchcard charts based on Elasticsearch [histogram] (https://www.elastic.co
 
 ##Documentation
 
+Set some settings before calling the init() function:
 
+```javascript
+punchcard.width = 500;
+punchcard.top = 50;
+punchcard.svgID = "myFristChart";
+```
+
+You can set these settings anytime and call the init() again to initiate the SVG with new config.
+
+```javascript
+punchcard.init();
+```
+
+All charts would be removed whenever init() is called. (possible to only remove svg with a specific ID if you set one)
+
+Now it is time for loading data:
+
+```javascript
+punchcard.draw(data);
+```
 
 ##Installation
 ###Git clone
@@ -27,7 +47,7 @@ bower install --save es-punchcard
 
 (OPTIONAL) You may want to have a .bowerrc file and change it to:
 
-```
+```javascript
 {
   "directory": "js/"
 }
@@ -37,7 +57,7 @@ This way you can use the demo.html right away. Otherwise you have to fix the pat
 
 e.g. chage this to where ever you keep your D3 library.
 
-```
+```javascript
  <script src="js/d3/d3.min.js"></script>
 ```
 
@@ -73,4 +93,3 @@ Moment [https://github.com/moment/moment] (https://github.com/moment/moment)
 * Set start and end date dynamically from result by default
 
 ##Copyright and License
-
