@@ -42,6 +42,8 @@ Moment [https://github.com/moment/moment] (https://github.com/moment/moment)
 ##TODO
 * Updating documentations
 * Connect mouse events to custome functions defined by user
+* Customized date format based on Elasticsearch Histogram results
+* Set start and end date dynamically from result by default
 
 ##Copyright and License
 
