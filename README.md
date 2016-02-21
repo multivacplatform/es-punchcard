@@ -2,7 +2,7 @@
 
 
 ##Description
-Make punchcard charts based on Elasticsearch histogram aggregations
+Make punchcard charts based on Elasticsearch [histogram] (https://www.elastic.co/guide/en/elasticsearch/reference/master/search-aggregations-bucket-histogram-aggregation.html) or [date histogram] (https://www.elastic.co/guide/en/elasticsearch/reference/master/search-aggregations-bucket-datehistogram-aggregation.html) aggregations
 
 ##Documentation
 
