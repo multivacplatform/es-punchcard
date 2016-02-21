@@ -1,4 +1,4 @@
-# es-punchcard: Punchcard for Elasticsearc Histogram Aggregations
+# es-punchcard
 
 
 ##Description
