@@ -74,9 +74,7 @@ var punchcard = (function () {
         svg.append("g")
             .attr("class", "x axis")
             .call(xAxis);
-        //d3.event.sourceEvent.startCl();
         for (var j = 0; j < data.length; j++) {
-            //x.domain(d3.extent(data[j]['tweets'], function(d) { return d[1]; }));
             var g = svg.append("g").attr("class", "journal");
             var circles = g.selectAll("circle")
                 .data(data[j]['monthly']['buckets'])
@@ -97,7 +95,6 @@ var punchcard = (function () {
             circles
                 .attr("cx", function (d, i) {
                     return xScale(format(moment(d['key']).format('YYYY-MM')));
-                    //return d[1]+155;
                 })
                 .attr("cy", j * 30 + 20)
                 .attr("r", function (d) {
@@ -110,7 +107,6 @@ var punchcard = (function () {
             text
                 .attr("y", j * 30 + 25)
                 .attr("x", function (d, i) {
-                    //return xScale(d[0]);
                     return xScale(format(moment(d['key']).format('YYYY-MM'))) - 8;
                 })
                 .attr("class", "value")
