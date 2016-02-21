@@ -11,6 +11,13 @@ Make punchcard charts based on Elasticsearch histogram aggregations
 ```
 git clone https://github.com/maziyarpanahi/es-punchcard.git
 ```
+
+or
+
+```
+git clone https://maziyar_sh@bitbucket.org/iscpif/es-punchcard.git
+```
+
 ###Bower
 ```
 bower install es-punchcard
