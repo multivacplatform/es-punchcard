@@ -6,6 +6,31 @@ Make punchcard charts based on Elasticsearch [histogram] (https://www.elastic.co
 
 
 ##Installation
+###Bower
+
+This is a recommended way and it will install everything you need:
+
+```
+bower install --save es-punchcard
+```
+
+(OPTIONAL) You may want to have a .bowerrc next to your bower.json file and change it to:
+
+```javascript
+{
+  "directory": "js/"
+}
+```
+
+This way you can use the demo.html right away. Otherwise you have to fix the paths to the required files.
+
+e.g. chage this to where ever you keep your D3 library.
+
+```javascript
+ <script src="js/d3/d3.min.js"></script>
+```
+
+
 ###Git clone
 ```
 git clone https://github.com/maziyarpanahi/es-punchcard.git
@@ -31,32 +56,17 @@ Optional for the demo file:
 Bootstrap [https://github.com/twbs/bootstrap] (https://github.com/twbs/bootstrap)
 
 
-###Bower
-
-This would install everything you need:
-
-```
-bower install --save es-punchcard
-```
-
-(OPTIONAL) You may want to have a .bowerrc file and change it to:
-
-```javascript
-{
-  "directory": "js/"
-}
-```
-
-This way you can use the demo.html right away. Otherwise you have to fix the paths to the required files.
-
-e.g. chage this to where ever you keep your D3 library.
-
-```javascript
- <script src="js/d3/d3.min.js"></script>
-```
-
-
 ##Documentation
+
+```javascript
+  <link rel="stylesheet" href="style.css" /> <!-- load punchcard css (OPTIONAL) -->
+  <script src="/path-to-jquery/jquery.min.js" />
+  <script src="/path-to-bootstrap/bootstrap.min.js" />
+  <script src="/path-to-d3/d3.min.js" /> <!-- (REQUIRED) -->
+  <script src="/path-to-moment/moment.js" /> <!-- (REQUIRED) -->
+  <script src="/path-to-es-punchcard/es-punchcard.js" /> <!-- (REQUIRED) -->
+```
+
 
 Set some settings before calling the init() function:
 
