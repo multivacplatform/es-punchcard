@@ -102,9 +102,13 @@ Right way to send aggregation to Elasticsearch to get proper response:
 
 
 ##Example
+###Live Demo
 Climate at ISCPIF [https://climate.iscpif.fr/playground] (https://climate.iscpif.fr/playground)
 
 ![Climate Demo](https://github.com/maziyarpanahi/es-punchcard/raw/master/demo-climatechange.png "Climate Demo")
+
+
+###JSFiddle
 
 It is also available on JSFiddle [https://jsfiddle.net/maziyar/73da0urn/] (https://jsfiddle.net/maziyar/73da0urn/)
 
