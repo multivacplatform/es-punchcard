@@ -106,6 +106,8 @@ Climate at ISCPIF [https://climate.iscpif.fr/playground] (https://climate.iscpif
 
 ![Climate Demo](https://github.com/maziyarpanahi/es-punchcard/raw/master/demo-climatechange.png "Climate Demo")
 
+It is also available on JSFiddle [https://jsfiddle.net/maziyar/73da0urn/] (https://jsfiddle.net/maziyar/73da0urn/)
+
 
 ##Credits
 ###Inspired by
