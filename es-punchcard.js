@@ -70,11 +70,8 @@ var punchcard = (function () {
         var x = d3.scale.linear()
             .range([0, window.width]);
 
-        var start_year = custom_start_year,
-            end_year = custom_end_year;
-
         var xScale = d3.time.scale()
-            .domain([start_year, end_year])
+            .domain([custom_start_year, custom_end_year])
             .range([0, width]);
 
         var xAxis = d3.svg.axis()
