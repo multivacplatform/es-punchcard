@@ -1,10 +1,10 @@
 var punchcard = (function () {
     var es = {};
-    var width, height, margin, svg, svgID, custom_start_year, custom_end_year;
+    var width, height, margin, svg, svgID, custom_start_year,
+        custom_end_year, d3DateFormat, dataDateFormat, customTickFormat;
 
     //initiate the D3 svg
     es.init = function(){
-        var format = d3.time.format("%Y-%m").parse;
         //charts margin
         //accessible right before punchcard.init()
         //e.g. punchcard.top = 100
@@ -18,8 +18,13 @@ var punchcard = (function () {
         width = punchcard.width || 500;
         height = punchcard.height || 500;
 
+        d3DateFormat = punchcard.d3DateFormat || "%Y-%m-%d";
+        dataDateFormat = punchcard.dataDateFormat || "YY-MM-DD";
+        customTickFormat = punchcard.customTickFormat || "%m";
+        
         svgID = punchcard.svgID || "punchCard";
 
+        var format = d3.time.format(d3DateFormat).parse;
         //set the start and end year-month
         if (punchcard.custom_start_year){
             custom_start_year = format(punchcard.custom_start_year);
@@ -63,9 +68,9 @@ var punchcard = (function () {
         svg.selectAll("text").remove();
 
         //format the date for D3 chart
-        var format = d3.time.format("%Y-%m").parse;
+        var format = d3.time.format(d3DateFormat).parse;
         //coloring the chart
-        var c = d3.scale.category20();
+        var c = d3.scale.category10();
 
         var x = d3.scale.linear()
             .range([0, window.width]);
@@ -78,7 +83,7 @@ var punchcard = (function () {
             .scale(x)
             .orient("top")
             .scale(xScale)
-            .tickFormat(d3.time.format("%m"));
+            .tickFormat(d3.time.format(customTickFormat));
 
         svg.append("g")
             .attr("class", "x axis")
@@ -103,7 +108,7 @@ var punchcard = (function () {
 
             circles
                 .attr("cx", function (d, i) {
-                    return xScale(format(moment(d['key']).format('YYYY-MM')));
+                    return xScale(format(moment(d['key']).format(dataDateFormat)));
                 })
                 .attr("cy", j * 30 + 20)
                 .attr("r", function (d) {
@@ -116,7 +121,7 @@ var punchcard = (function () {
             text
                 .attr("y", j * 30 + 25)
                 .attr("x", function (d, i) {
-                    return xScale(format(moment(d['key']).format('YYYY-MM'))) - 8;
+                    return xScale(format(moment(d['key']).format(dataDateFormat))) - 8;
                 })
                 .attr("class", "value")
                 .text(function (d) {

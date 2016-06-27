@@ -35,6 +35,9 @@
                     punchcard.svgID = "myFristChart";
                     punchcard.custom_start_year = "2015-05";
                     punchcard.custom_end_year = "2015-12";
+                    punchcard.d3DateFormat = "%Y-%m";
+                    punchcard.dataDateFormat = "YYYY-MM";
+                    punchcard.customTickFormat = "%m";
                     punchcard.init();
 
                     //load the data into punchcard
@@ -49,6 +52,9 @@
                         punchcard.width = 500;
                         punchcard.height = 200;
                         punchcard.top = 60;
+                        punchcard.d3DateFormat = "%Y-%m";
+                        punchcard.dataDateFormat = "YYYY-MM";
+                        punchcard.customTickFormat = "%Y-%m";
 
                         punchcard.init();
                         punchcard.draw(data);
