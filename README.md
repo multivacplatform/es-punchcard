@@ -58,6 +58,7 @@ Bootstrap [https://github.com/twbs/bootstrap] (https://github.com/twbs/bootstrap
 
 ##Documentation
 
+You can install these by simply using bower install:
 ```javascript
   <link rel="stylesheet" href="style.css" /> <!-- load punchcard css (OPTIONAL) -->
   <script src="/path-to-jquery/jquery.min.js" />
@@ -76,6 +77,9 @@ punchcard.top = 50;
 punchcard.svgID = "myFristChart";
 punchcard.custom_start_year = "2015-05";
 punchcard.custom_end_year = "2015-12";
+punchcard.d3DateFormat = "%Y-%m";
+punchcard.dataDateFormat = "YYYY-MM";
+punchcard.customTickFormat = "%Y-%m";
 ```
 
 You can set these settings anytime and call the init() again to initiate the SVG with new config.
@@ -114,6 +118,9 @@ Climate at ISCPIF [https://climate.iscpif.fr/playground] (https://climate.iscpif
 
 It is also available on JSFiddle [https://jsfiddle.net/maziyar/73da0urn/] (https://jsfiddle.net/maziyar/73da0urn/)
 
+###Native Demo
+
+Simply run "bower install" to install required libraries and open demo.html file.
 
 ##Credits
 ###Inspired by
