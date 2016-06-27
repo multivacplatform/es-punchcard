@@ -74,6 +74,8 @@ Set some settings before calling the init() function:
 punchcard.width = 500;
 punchcard.top = 50;
 punchcard.svgID = "myFristChart";
+punchcard.custom_start_year = "2015-05";
+punchcard.custom_end_year = "2015-12";
 ```
 
 You can set these settings anytime and call the init() again to initiate the SVG with new config.

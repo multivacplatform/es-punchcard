@@ -1,10 +1,10 @@
 var punchcard = (function () {
     var es = {};
-    var width, height, margin, svg, svgID;
+    var width, height, margin, svg, svgID, custom_start_year, custom_end_year;
 
     //initiate the D3 svg
     es.init = function(){
-
+        var format = d3.time.format("%Y-%m").parse;
         //charts margin
         //accessible right before punchcard.init()
         //e.g. punchcard.top = 100
@@ -19,6 +19,18 @@ var punchcard = (function () {
         height = punchcard.height || 500;
 
         svgID = punchcard.svgID || "punchCard";
+
+        //set the start and end year-month
+        if (punchcard.custom_start_year){
+            custom_start_year = format(punchcard.custom_start_year);
+        }else{
+            custom_start_year = format("2015-01");
+        }
+        if (punchcard.custom_end_year){
+            custom_end_year = format(punchcard.custom_end_year);
+        }else{
+            custom_end_year = format("2015-12");
+        }
 
         //remove the previous chart (svg)
         //in case init is being called twice
@@ -58,8 +70,8 @@ var punchcard = (function () {
         var x = d3.scale.linear()
             .range([0, window.width]);
 
-        var start_year = format("2015-03"),
-            end_year = format("2015-12");
+        var start_year = custom_start_year,
+            end_year = custom_end_year;
 
         var xScale = d3.time.scale()
             .domain([start_year, end_year])
