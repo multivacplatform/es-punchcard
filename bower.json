@@ -13,8 +13,8 @@
   ],
   "dependencies": {
     "d3": "latest",
-    "bootstrap": "latest",
-    "moment": "~2.10.6"
+    "bootstrap": "3.3.7",
+    "moment": "2.19.1"
   },
   "private": false,
   "main": "es-punchcard.js",
@@ -30,7 +30,8 @@
   "keywords": [
     "punchcard",
     "chart",
-    "elasticsearch"
+    "elasticsearch",
+    "visualization"
   ],
   "license": "MIT"
 }
