@@ -1,12 +1,12 @@
 # es-punchcard
 
 
-##Description
+## Description
 Make punchcard charts based on Elasticsearch [histogram] (https://www.elastic.co/guide/en/elasticsearch/reference/master/search-aggregations-bucket-histogram-aggregation.html) or [date histogram] (https://www.elastic.co/guide/en/elasticsearch/reference/master/search-aggregations-bucket-datehistogram-aggregation.html) aggregations
 
 
-##Installation
-###Bower
+## Installation
+### Bower
 
 This is a recommended way and it will install everything you need:
 
@@ -31,7 +31,7 @@ e.g. chage this to where ever you keep your D3 library.
 ```
 
 
-###Git clone
+### Git clone
 ```
 git clone https://github.com/maziyarpanahi/es-punchcard.git
 ```
@@ -56,7 +56,7 @@ Optional for the demo file:
 Bootstrap [https://github.com/twbs/bootstrap] (https://github.com/twbs/bootstrap)
 
 
-##Documentation
+## Documentation
 
 You can install these by simply using bower install:
 ```javascript
@@ -96,7 +96,7 @@ Now it is time for loading some data:
 punchcard.draw(data);
 ```
 
-##Data Structure
+## Data Structure
 
 This is a sample of one of the keys. The buckets refer to (date) histogram aggregation to fill the punchcard. 
 
@@ -107,30 +107,30 @@ This is a sample of one of the keys. The buckets refer to (date) histogram aggre
 Right way to send aggregation to Elasticsearch to get proper response:
 
 
-##Example
-###Live Demo
+## Example
+### Live Demo
 Climate at ISCPIF [https://climate.iscpif.fr/playground] (https://climate.iscpif.fr/playground)
 
 ![Climate Demo](https://github.com/maziyarpanahi/es-punchcard/raw/master/demo-climatechange.png "Climate Demo")
 
 
-###JSFiddle
+### JSFiddle
 
 It is also available on JSFiddle [https://jsfiddle.net/maziyar/73da0urn/] (https://jsfiddle.net/maziyar/73da0urn/)
 
-###Native Demo
+### Native Demo
 
 Simply run "bower install" to install required libraries and open demo.html file.
 
-##Credits
-###Inspired by
+## Credits
+### Inspired by
 
 Repository [https://github.com/mutanthumb/ETD_bubbles] (https://github.com/mutanthumb/ETD_bubbles)
 
 
 Example [http://neuralengr.com/asifr/journals] (http://neuralengr.com/asifr/journals/)
 
-###Used Libraries
+### Used Libraries
 Bootstrap [https://github.com/twbs/bootstrap] (https://github.com/twbs/bootstrap)
 
 D3 [https://github.com/mbostock/d3] (https://github.com/mbostock/d3)
@@ -139,12 +139,12 @@ jQuery [https://github.com/jquery/jquery] (https://github.com/jquery/jquery)
 
 Moment [https://github.com/moment/moment] (https://github.com/moment/moment)
 
-##TODO
+## TODO
 * Updating documentations
 * Connect mouse events to custome functions defined by user
 * Customized date format based on Elasticsearch Histogram results
 * Set start and end date dynamically from result by default
 
-##Copyright and License
+## Copyright and License
 
 Code and documentation copyright 2015-2016 [ISCPIF - CNRS](http://iscpif.fr). Code released under [the MIT license](https://github.com/maziyarpanahi/es-punchcard/blob/master/LICENSE.md). Docs released under [Creative Commons](https://github.com/maziyarpanahi/es-punchcard/blob/master/LICENSE.md).
