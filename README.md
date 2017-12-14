@@ -122,6 +122,11 @@ It is also available on JSFiddle [https://jsfiddle.net/maziyar/73da0urn/] (https
 
 Simply run "bower install" to install required libraries and open demo.html file.
 
+## Code of Conduct
+
+This, and all github.com/multivacplatform projects, are under the [Multivac Platform Open Source Code of Conduct](https://github.com/multivacplatform/code-of-conduct/blob/master/code-of-conduct.md). Additionally, see the [Typelevel Code of Conduct](http://typelevel.org/conduct) for specific examples of harassing behavior that are not tolerated.
+
+
 ## Credits
 ### Inspired by
 
