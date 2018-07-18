@@ -1,4 +1,4 @@
-# es-punchcard
+# es-punchcard [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/multivacplatform/es-punchcard/blob/master/LICENSE.md)
 
 
 ## Description
