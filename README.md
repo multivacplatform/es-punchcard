@@ -1,4 +1,5 @@
 # es-punchcard [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/multivacplatform/es-punchcard/blob/master/LICENSE.md) [![Multivac Discuss](https://img.shields.io/badge/multivac-discuss-ff69b4.svg)](https://discourse.iscpif.fr/c/multivac) [![Multivac Channel](https://img.shields.io/badge/multivac-chat-ff69b4.svg)](https://chat.iscpif.fr/channel/multivac)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmultivacplatform%2Fes-punchcard.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmultivacplatform%2Fes-punchcard?ref=badge_shield)
 
 
 ## Description
@@ -153,3 +154,6 @@ Moment [https://github.com/moment/moment] (https://github.com/moment/moment)
 ## Copyright and License
 
 Code and documentation copyright (c) 2015-2017 [ISCPIF - CNRS](http://iscpif.fr). Code released under the [MIT license](https://github.com/multivacplatform/es-punchcard/blob/master/LICENSE.md).
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmultivacplatform%2Fes-punchcard.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmultivacplatform%2Fes-punchcard?ref=badge_large)
