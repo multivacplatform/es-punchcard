@@ -151,4 +151,4 @@ Moment [https://github.com/moment/moment] (https://github.com/moment/moment)
 
 ## Copyright and License
 
-Code and documentation copyright (c) 2015-2017 [ISCPIF - CNRS](http://iscpif.fr). Code released under the [MIT license](https://github.com/multivacplatform/es-punchcard/blob/master/LICENSE.md).
+Code and documentation copyright (c) 2015 [ISCPIF - CNRS](http://iscpif.fr). Code released under the [MIT license](https://github.com/multivacplatform/es-punchcard/blob/master/LICENSE.md).
